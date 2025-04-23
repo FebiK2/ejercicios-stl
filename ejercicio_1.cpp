@@ -57,15 +57,19 @@ int main(){
     // Se imprime el contenido del set
     bool primer_elemento = true;
     for (const auto& palabra : set_palabras) {
-        
+        // Se imprime cada palabra en el set
+        // Se verifica si es el primer elemento para no imprimir la coma
+        // Se imprime el set en formato {palabra1, palabra2, ...}
         if (primer_elemento){
             cout << "{" << palabra;
             primer_elemento = false;
         }
+        // En caso de no ser el primer elemento se imprime la coma
         else{
             cout << ", " << palabra;
         }
     }
+    // Se imprime la llave de cierre
     cout << "}" << endl;
     return 0;
 

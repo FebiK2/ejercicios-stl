@@ -52,18 +52,22 @@ map<string,int> frecuenciaPalabras(string& nombreArchivo){
     // Se cuentan las frecuencias de cada elemento de set_almacen en almacen
     vector<string>::iterator it = almacen.begin();
     int frecuencia;
-
+    // Se recorre el set_almacen
+    // Se usa un iterador para recorrer el vector almacen
     for(const string& s: set_almacen){
         frecuencia = 0;
         while(it != almacen.end()){
+            // Se verifica si el elemento actual del vector almacen es igual al elemento actual del set_almacen
             if(*it == s){
                 frecuencia++;
             }
             it++;
         }
+        // Se almacena la palabra y su frecuencia en el map
         pal_frec[s] = frecuencia;
         it = almacen.begin();
     }
+    // Se retorna el map con las palabras y su frecuencia
     return pal_frec;
     
 }

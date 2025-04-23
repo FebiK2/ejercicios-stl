@@ -41,7 +41,9 @@ int main(){
     // Se imprime la cola de prioridad en la terminal usando una copia para no borrar la cola original
     priority_queue<string, vector<string>, greater<string>> copia = tareas;
     while (!copia.empty()){
+        // Se imprime la tarea con mayor prioridad usando la función top()
         cout << copia.top() << endl;
+        // Se usa la función pop() para eliminar la tarea con mayor prioridad
         copia.pop();
     }
     return 0;
