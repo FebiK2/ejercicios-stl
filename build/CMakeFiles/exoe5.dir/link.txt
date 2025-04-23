@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/exoe5.dir/ejercicio_5.cpp.o -o exoe5 

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/exoe3.dir/ejercicio_3.cpp.o -o exoe3 

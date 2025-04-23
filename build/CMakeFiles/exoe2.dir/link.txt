@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/exoe2.dir/ejercicio_2.cpp.o -o exoe2 
